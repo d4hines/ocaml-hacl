@@ -1,11 +1,4 @@
-(executable
+(test
  (name test)
+ (package hacl)
  (libraries hex hacl alcotest))
-
-(alias
- (name    runtest-hacl)
- (action  (run %{exe:test.exe})))
-
-(alias
- (name    runtest)
- (deps    (alias runtest-hacl)))
